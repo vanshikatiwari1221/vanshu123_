@@ -1,0 +1,25 @@
+LEETCODE PROBLEM-SINGLE NUMBER
+
+
+Approaches:-
+1. using nested loop,TC-O(n^2)
+2. using sorting,TC-O(NlogN)
+3. USING XOR,TC--O(N)
+
+code for optimal solution
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+     sort(nums.begin(),nums.end());
+     int ans=0;
+
+     for(int i=0;i<nums.size();i++){
+
+        
+         ans= ans^nums[i];
+         }
+        
+              
+               return ans;
+    }
+};
